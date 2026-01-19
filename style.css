@@ -380,7 +380,7 @@ section {
    RESPONSIVIDADE MOBILE
 ============================================ */
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
     .glitch {
         font-size: 1.8rem;
     }
