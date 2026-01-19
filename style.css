@@ -212,3 +212,193 @@ section {
     color: #00ff41;
     padding-left: 5px;
 }
+
+/* ============================================
+   PROJETOS
+============================================ */
+
+.projects-grid {
+    display: grid;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: rgba(0, 255, 65, 0.05);
+    border: 1px solid #00ff41;
+    padding: 25px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.project-card:hover {
+    background: rgba(0, 255, 65, 0.08);
+    border-color: #ff00ff;
+    transform: translateX(10px);
+    box-shadow: -5px 5px 20px rgba(255, 0, 255, 0.3);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-title {
+    color: #00ff41;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.project-status {
+    color: #ff00ff;
+    font-size: 0.85rem;
+    padding: 5px 10px;
+    border: 1px solid #ff00ff;
+    border-radius: 3px;
+}
+
+.project-description {
+    color: #c0c0c0;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tech-tag {
+    background: rgba(255, 0, 255, 0.1);
+    color: #ff00ff;
+    padding: 5px 12px;
+    border: 1px solid #ff00ff;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.project-link {
+    display: inline-block;
+    color: #00ff41;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid #00ff41;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: #00ff41;
+    color: #0a0a0a;
+    box-shadow: 0 0 15px #00ff41;
+}
+
+/* ============================================
+   CONTATO
+============================================ */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0, 255, 65, 0.05);
+    border: 1px solid #00ff41;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #00ff41;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    background: rgba(255, 0, 255, 0.1);
+    border-color: #ff00ff;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(255, 0, 255, 0.4);
+}
+
+.link-icon {
+    color: #ff00ff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.link-text {
+    flex: 1;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.link-arrow {
+    color: #00ff41;
+    font-weight: bold;
+}
+
+/* ============================================
+   FOOTER
+============================================ */
+
+.main-footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 2px solid #00ff41;
+    margin-top: 60px;
+}
+
+.footer-text {
+    color: #00ff41;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer-subtext {
+    color: #c0c0c0;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+/* ============================================
+   RESPONSIVIDADE MOBILE
+============================================ */
+
+@media (max-width: 768px) {
+    .glitch {
+        font-size: 1.8rem;
+    }
+    
+    .status-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-title {
+        font-size: 1rem;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
