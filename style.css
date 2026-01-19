@@ -148,3 +148,67 @@ section {
     content: "> ";
     color: #ff00ff;
 }
+
+/* ============================================
+   SOBRE MIM
+============================================ */
+
+.about-section .text {
+    color: #c0c0c0;
+    font-size: 1rem;
+    line-height: 1.8;
+    border-left: 3px solid #00ff41;
+    padding-left: 20px;
+    background: rgba(0, 255, 65, 0.03);
+    padding: 20px;
+    border-radius: 3px;
+}
+
+/* ============================================
+   SKILLS - HABILIDADES
+============================================ */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.skill-category {
+    background: rgba(0, 255, 65, 0.05);
+    border: 1px solid #00ff41;
+    padding: 20px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+    background: rgba(0, 255, 65, 0.1);
+    border-color: #ff00ff;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 65, 0.3);
+}
+
+.category-title {
+    color: #ff00ff;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.skill-list {
+    list-style: none;
+}
+
+.skill-list li {
+    color: #c0c0c0;
+    padding: 5px 0;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.skill-list li:hover {
+    color: #00ff41;
+    padding-left: 5px;
+}
