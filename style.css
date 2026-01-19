@@ -30,3 +30,121 @@ body::before {
     pointer-events: none;
     z-index: 9999;
 }
+
+
+/* ============================================
+   HEADER - CABEÇALHO PRINCIPAL
+============================================ */
+
+.main-header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    border-bottom: 2px solid #00ff41;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.glitch-container {
+    margin-bottom: 15px;
+}
+
+.glitch {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    text-shadow: 
+        0 0 10px #00ff41,
+        0 0 20px #00ff41,
+        0 0 30px #00ff41;
+}
+
+/* Efeito Glitch no hover */
+.glitch:hover {
+    animation: glitch 0.3s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 
+            -2px 0 #ff00ff,
+            2px 0 #00ffff,
+            0 0 10px #00ff41;
+    }
+    25% {
+        text-shadow: 
+            2px 0 #ff00ff,
+            -2px 0 #00ffff,
+            0 0 20px #00ff41;
+    }
+    50% {
+        text-shadow: 
+            -2px 0 #00ffff,
+            2px 0 #ff00ff,
+            0 0 30px #00ff41;
+    }
+    75% {
+        text-shadow: 
+            2px 0 #00ffff,
+            -2px 0 #ff00ff,
+            0 0 20px #00ff41;
+    }
+    100% {
+        text-shadow: 
+            -2px 0 #ff00ff,
+            2px 0 #00ffff,
+            0 0 10px #00ff41;
+    }
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #00ff41;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.status-bar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 0.85rem;
+    flex-wrap: wrap;
+}
+
+.status-online {
+    color: #00ff41;
+    font-weight: bold;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0.3; }
+}
+
+/* ============================================
+   SEÇÕES GERAIS
+============================================ */
+
+section {
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #00ff41;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #00ff41;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-title::before {
+    content: "> ";
+    color: #ff00ff;
+}
