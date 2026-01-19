@@ -1,205 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de QA | Automação & Testes</title>
-    <!-- Carregando Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configuração do Tailwind para usar a fonte Inter e cores -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'qa-primary': '#4f46e5', // Indigo 600
-                        'qa-secondary': '#eef2ff', // Indigo 50
-                        'qa-dark': '#1e293b', // Slate 800
-                        'qa-light': '#f8fafc', // Slate 50
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-        /* Estilos customizados para âncoras e efeitos de hover */
-        .qa-link:hover {
-            color: #4f46e5;
-            text-decoration: underline;
-        }
-        /* Classe para ícones inline (substituindo o Lucide) */
-        .icon {
-            display: inline-block;
-            width: 1.25rem;
-            height: 1.25rem;
-            vertical-align: middle;
-            fill: none;
-            stroke: currentColor;
-            stroke-width: 2;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
-    </style>
+    <title>Beatriz Serra // QA Engineer</title>
 </head>
-<body class="bg-qa-secondary text-gray-800 font-sans min-h-screen p-4 sm:p-8">
-
-    <!-- Container Principal Centrado -->
-    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden">
-
-        <!-- Seção de Cabeçalho (Introdução e Foto) -->
-        <header class="bg-qa-dark text-qa-light p-6 sm:p-10 flex flex-col sm:flex-row items-center justify-between">
-            
-            <div class="flex items-center space-x-6">
-                <!-- Placeholder para Foto de Perfil (Substituir por sua foto ou imagem) -->
-                <img src="https://drive.google.com/file/d/1ldV1JuSSglQeoLy-V4D4HNRTRqds2Syl/view?usp=sharing" 
-                     alt="Foto de Perfil" 
-                     class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-lg">
-                
-                <div class="text-center sm:text-left">
-                    <h1 class="text-3xl sm:text-4xl font-extrabold mb-1">
-                        Beatriz Barbosa Costa Serra
-                    </h1>
-                    <p class="text-qa-secondary text-lg font-medium">
-                        Engenheira de QA | Foco em Automação e Manual
-                    </p>
-                </div>
-            </div>
-
-            <!-- Links Sociais/Contato -->
-            <div class="mt-4 sm:mt-0 flex flex-wrap justify-center sm:justify-end space-x-4">
-                <a href="https://www.linkedin.com/in/beatriz-barbosa-costa-serra-b97728391" target="_blank" 
-                   class="qa-link text-qa-light hover:text-qa-primary transition duration-300 flex items-center text-sm">
-                   <!-- Icone LinkedIn (Placeholder SVG) -->
-                   <svg class="icon mr-1" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                   LinkedIn
-                </a>
-                <a href="https://github.com/beatrizbcserra" target="_blank" 
-                   class="qa-link text-qa-light hover:text-qa-primary transition duration-300 flex items-center text-sm">
-                   <!-- Icone GitHub (Placeholder SVG) -->
-                   <svg class="icon mr-1" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 3 4.22 4.22 0 0 0 18 2.07l-1.54.34a6.76 6.76 0 0 0-3.32 0C10.43 2.07 8 4.77 8 7.47v.88c0 3.51-2.92 6.16-5.44 6.32a.9.9 0 0 0-.08.15c-.15.25-.28.53-.42.84l-.12.23c-.15.35-.29.69-.45 1.05A.96.96 0 0 0 2 22h19a.96.96 0 0 0 .5-.19c-.16-.36-.3-.7-.45-1.05z"></path></svg>
-                   GitHub
-                </a>
-            </div>
-
-        </header>
-
-        <!-- Seção Principal de Conteúdo -->
-        <main class="p-6 sm:p-10">
-            
-            <!-- Sobre Mim -->
-            <section class="mb-10 pb-6 border-b border-gray-200">
-                <h2 class="text-2xl font-bold text-qa-dark mb-4 border-l-4 border-qa-primary pl-3">
-                    Sobre Mim
-                </h2>
-                <p class="text-gray-600 leading-relaxed">
-                    Sou uma QA Engineer formada na Mate Academy, apaixonada por garantir a qualidade e a estabilidade de software. Meu foco é na **automação de testes** com linguagens modernas e frameworks eficientes, como **Playwright e JavaScript**. Busco aplicar uma mentalidade ágil, utilizando documentação clara (Planos de Teste, Casos de Teste e Relatórios de Bug) e integração contínua (CI/CD) para otimizar o ciclo de desenvolvimento.
-                </p>
-                <p class="text-gray-600 leading-relaxed mt-2 italic text-sm">
-                    Estou aberta a desafios e pronta para contribuir em ambientes dinâmicos e inovadores.
-                </p>
-            </section>
-
-            <!-- Habilidades Técnicas -->
-            <section class="mb-10 pb-6 border-b border-gray-200">
-                <h2 class="text-2xl font-bold text-qa-dark mb-4 border-l-4 border-qa-primary pl-3">
-                    Habilidades Chave
-                </h2>
-                <div class="flex flex-wrap gap-3">
-                    <span class="bg-qa-dark text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">
-                        Playwright
-                    </span>
-                    <span class="bg-qa-dark text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">
-                        JavaScript (Node.js)
-                    </span>
-                    <span class="bg-qa-dark text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">
-                        Testes de UI/E2E
-                    </span>
-                    <span class="bg-qa-dark text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">
-                        Testes Manuais & Exploratórios
-                    </span>
-                    <span class="bg-qa-dark text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">
-                        Documentação de QA (Planos, Casos, Bugs)
-                    </span>
-                    <span class="bg-qa-dark text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">
-                        Git & GitHub (Controle de Versão)
-                    </span>
-                    <span class="bg-qa-dark text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">
-                        Metodologias Ágeis (Scrum/Kanban)
-                    </span>
-                    <span class="bg-qa-dark text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">
-                        CI/CD (Conceitos)
-                    </span>
-                </div>
-            </section>
-
-            <!-- Projetos em Destaque -->
-            <section class="mb-6">
-                <h2 class="text-2xl font-bold text-qa-dark mb-6 border-l-4 border-qa-primary pl-3">
-                    Projetos em Destaque (Repositórios)
-                </h2>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-                    <!-- Projeto 1: Automação E2E com Playwright -->
-                    <div class="bg-qa-light border border-gray-200 p-5 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                        <h3 class="text-xl font-semibold text-qa-primary mb-2">
-                            Automação de Checkout (E2E)
-                        </h3>
-                        <p class="text-sm text-gray-600 mb-3">
-                            Implementação de testes End-to-End (E2E) para um fluxo de compra completo em uma loja virtual fictícia. Demonstração de comandos, asserções e relatórios do Playwright.
-                        </p>
-                        <ul class="flex flex-wrap gap-2 text-xs mb-3">
-                             <li class="bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded-full">Playwright</li>
-                             <li class="bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded-full">JavaScript</li>
-                             <li class="bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded-full">E2E</li>
-                        </ul>
-                        <a href="[LINK DO REPOSITÓRIO 1: PROJETO DE AUTOMAÇÃO]" target="_blank" 
-                           class="text-qa-primary hover:text-indigo-700 font-medium flex items-center mt-2 transition duration-300">
-                            Ver Repositório 
-                            <svg class="icon w-4 h-4 ml-1" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                        </a>
-                    </div>
-
-                    <!-- Projeto 2: Documentação de Casos de Teste -->
-                    <div class="bg-qa-light border border-gray-200 p-5 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                        <h3 class="text-xl font-semibold text-qa-primary mb-2">
-                            Documentação de Testes (Plano e Casos)
-                        </h3>
-                        <p class="text-sm text-gray-600 mb-3">
-                            Exemplo de Plano de Teste, Casos de Teste e Matriz de Rastreabilidade para uma aplicação de gerenciamento de tarefas. Foco na clareza e cobertura funcional.
-                        </p>
-                         <ul class="flex flex-wrap gap-2 text-xs mb-3">
-                             <li class="bg-pink-100 text-pink-800 px-2 py-0.5 rounded-full">Testes Manuais</li>
-                             <li class="bg-pink-100 text-pink-800 px-2 py-0.5 rounded-full">Casos de Teste</li>
-                             <li class="bg-pink-100 text-pink-800 px-2 py-0.5 rounded-full">Bug Report</li>
-                        </ul>
-                        <a href="https://docs.google.com/spreadsheets/d/17KLPGWnsp5194BiNsmfA1lXs5tIXIJBp-dzQ1FnT0uk/edit?usp=sharing" target="_blank" 
-                           class="text-qa-primary hover:text-indigo-700 font-medium flex items-center mt-2 transition duration-300">
-                            Ver Documentação
-                            <svg class="icon w-4 h-4 ml-1" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                        </a>
-                    </div>
-                    
-                    <!-- Adicione mais projetos conforme necessário -->
-
-                </div>
-            </section>
-        </main>
-
-        <!-- Rodapé -->
-        <footer class="bg-gray-100 p-6 sm:p-8 text-center text-sm text-gray-500 border-t border-gray-200">
-            <p>
-                Este portfólio foi criado usando HTML e Tailwind CSS, hospedado gratuitamente com GitHub Pages.
-            </p>
-            <p class="mt-2">
-                &copy; 2025 Beatriz Barbosa Costa Serra. Todos os direitos reservados.
-            </p>
-        </footer>
-
-    </div>
+<body>
+    <header class="main-header">
+        <div class="glitch-container">
+            <h1 class="glitch" data-text="BEATRIZ SERRA">BEATRIZ SERRA</h1>
+        </div>
+        <p class="subtitle"> // QA ENGINER // MANUAL & AUTOMATION // </p>
+        <div class="status-bar">
+            <span>STATUS: <span class="status-online">ONLINE</span></span>
+            <span>LOCATION: BELO_HORIZONTE.BR</span>
+        </div>
+    </header>
+    <section class="about-section">
+        <h2 class="section-title">_SOBRE_MIM</h2>
+        <p class="text"> // Prazer, meu nome é Beatriz e sou uma QA Engineer Júnior com formação em Ciência e Tecnologia pela UFVJM e especialização prática em Quality Assurance. Experiência em testes manuais e automatizados para 
+aplicações web, incluindo planejamento de cenários de teste, execução de testes funcionais e documentação de bugs. Atuação com automação E2E utilizando Cypress e JavaScript, 
+além de testes de API com Postman e integração de pipelines CI/CD com GitHub Actions. 
+        
+    </section>
 </body>
 </html>
